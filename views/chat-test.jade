@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/chat-style.css')
+    body
+        ul(class="pages")
+            li(class="chat page")
+                div(class="chatArea")
+                    ul(class="messages")
+                input(class="inputMessage" placeholder="Type here...")
+            li(class="login page")
+                div(class="form")
+                    h3(class="title") 输入你要发起对话的客户端ip
+                    input(class="usernameInput" type="text" maxlength="14")
+    script(src="https://code.jquery.com/jquery-1.10.2.min.js")
+    script(src="https://cdn.socket.io/socket.io-1.4.5.js")
+    script(src="javascripts/chat.js")
